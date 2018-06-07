@@ -27,15 +27,16 @@ nav{
 }
 .hero-area{
     padding-bottom:30px;
+    /* position: absolute; */
 }
 .hero-area img{
-    /* height:25%; */
+    height:85%;
     width:25%;
     /* vertical-align: middle; */
     /* bottom: 10; */
     /* margin-right: 0; */
     right: 7.5%;
-    position: absolute;
+    position: rela;
     /* max-height: 500px; */
     
 }
@@ -78,9 +79,11 @@ nav{
     }
 }
 #aboutme{
+    height: 1000px;
     padding:50px;
     background-color: white;
     color: black;
+    z-index: 100;
 }
 #aboutimage{
     margin: auto;
@@ -88,9 +91,41 @@ nav{
     padding-left: 40px;
     transform: translateX(var(--translateX));
     will-change: transform;
+    
+}
+.scene {
+    position: absolute;
+    /* display: block; */
+    
+    bottom: 0;
+	width: 100%;
+	transform: translateY(var(--translateY));
+    will-change: transform;
+    overflow: hidden;
+}
+#paraimg1{
+    vertical-align: bottom;
+}
+/* #paraimg2{
+    bottom: 10
+} */
+.div-wrapper{
+    height: 1000px;
+    width: 100%;
+    position: relative
+    
+}
+#projects{
+    height: 330px;
+    z-index: 200;
+    background-color: white;
+    position: relative;
+    color: black;
 }
 
+
 /* 
+
 font-family: 'Montserrat', sans-serif;
 
 

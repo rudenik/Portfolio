@@ -32,6 +32,23 @@ const nextIns = basicScroll.create({
 
     }
 }).start()
+document.querySelectorAll('.scene').forEach((elem) => {
+    const modifier = elem.getAttribute('data-modifier');
+    var actMod= modifier*10;
+    const startPos = elem.getAttribute('data-start');
+    basicScroll.create({
+        elem: elem,
+        from: 'top-bottom',
+        to: 'bottom-top',
+        direct: true,
+        props: {
+            '--translateY':{
+                from: startPos+'px',
+                to: actMod+'px'
+            }
+        }
+    }).start();
+})
 // instance.start();
 
 //this ain't working either. Wanna go back to trying to basicScroll on this.
