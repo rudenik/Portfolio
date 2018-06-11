@@ -1,5 +1,7 @@
-// import Typed  from './typed.js';
 
+/********************************************************
+THIS IS THE APP FILE
+ ********************************************************/
 var options = {
     strings: ["Are you classified as human?", "Negative, I am a Meat popsicle"],
     typeSpeed: 40,
@@ -8,17 +10,19 @@ var options = {
 }
 var typed = new Typed(".typed", options);
 
-const instance = basicScroll.create({
-	elem: document.querySelector('#justme'),
-	from: 'top-bottom',
-    to: 'bottom-top',
-	props: { "--translateX": {
-        from: '200px',
-        to: '100px',
-        timing: 'linear'
-        }
-    }
-}).start();
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+$('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top-50}, 500);
+});
 
 const nextIns = basicScroll.create({
     elem: document.querySelector("#aboutimage"),
