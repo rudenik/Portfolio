@@ -1,270 +1,262 @@
-.navbar-collapse{
-    font-size: 1.5em;
-    
+.navbar-collapse {
+	font-size: 1.5em;
 }
-.navbar{
-    background-color: black;   
+.navbar {
+	background-color: black;
 }
-a{
-    color: rgb(255,255,255,.5);
+a {
+	color: rgb(255, 255, 255, 0.5);
 }
-body{
-    background-color: black;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    height: 100%;
-    padding-top:40px;
+body {
+	background-color: black;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	height: 100%;
+	padding-top: 40px;
 }
-.area-content{
-    padding-top: 300px;
-    z-index: 20;
-    position: relative;
+.area-content {
+	padding-top: 300px;
+	z-index: 20;
+	position: relative;
 }
-.logo{
-    color: white;
-    font-family: 'Lobster', cursive;
+.logo {
+	color: white;
+	font-family: "Lobster", cursive;
 }
-h1{
-    font-family: 'Bowlby One SC', cursive;
-    
+h1 {
+	font-family: "Bowlby One SC", cursive;
 }
-nav{
-    font-family: 'Open Sans Condensed', sans-serif;
-    
+nav {
+	font-family: "Open Sans Condensed", sans-serif;
 }
-.hero-area{
-    padding-bottom:30px;
-    position: relative;
+.hero-area {
+	padding-bottom: 30px;
+	position: relative;
 }
-.hero-image{
-    background-image: url("../images/justme.png");
-    background-repeat: no-repeat;
-    background-position-x: 105%; 
-    display: block;
-    width: 80%;
-    height: 100%;
-    position: absolute;
-    bottom: 40;
-    right: 0;
-    overflow: auto;
+.hero-image {
+	background-image: url("../images/justme.png");
+	background-repeat: no-repeat;
+	background-position-x: 105%;
+	display: block;
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	bottom: 40;
+	right: 0;
+	overflow: auto;
 }
-#justme{
-    
-    margin-top: 90px;
-    overflow: auto;
-
+#justme {
+	margin-top: 90px;
+	overflow: auto;
 }
-.social-links{
-    padding-top:190px;
-    bottom:0;
+.social-links {
+	padding-top: 190px;
+	bottom: 0;
 }
 .typed-cursor {
-    opacity: 1;
-    animation: blink .7s infinite;
+	opacity: 1;
+	animation: blink 0.7s infinite;
 }
-.skill ul li{
-    display: inline-block;
-    background-color: #eee;
-    color: black;
-    margin: 5px;
-    padding: 10px 20px;
-    text-transform: uppercase;
+.skill ul li {
+	display: inline-block;
+	background-color: #eee;
+	color: black;
+	margin: 5px;
+	padding: 10px 20px;
+	text-transform: uppercase;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-#aboutme{
-    height: 80%;
-    padding: 50px;
-    background-color: white;
-    color: black;
-    overflow: auto;
-    z-index: 100;
+#aboutme {
+	height: 80%;
+	padding: 50px;
+	background-color: white;
+	color: black;
+	overflow: auto;
+	z-index: 100;
 }
-#aboutimage{
-    margin: auto;
-    display: block;
-    padding-left: 40px;
-    transform: translateX(var(--translateX));
-    will-change: transform;
-    
+#aboutimage {
+	margin: auto;
+	display: block;
+	padding-left: 40px;
+	transform: translateX(var(--translateX));
+	will-change: transform;
 }
 .scene {
-    position: absolute;
-    bottom: 0;
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	transform: translateY(var(--translateY));
-    will-change: transform;
-    overflow: hidden;
+	will-change: transform;
+	overflow: hidden;
 }
-#paraimg1{
-    vertical-align: bottom;
-}
-
-.div-wrapper{
-    height: 1000px;
-    width: 100%;
-    position: relative
-    
-}
-#protitle{
-    padding-top: 20px;
-}
-#projects{
-    background-color: white;
-    position: relative;
-    color: black;
-    padding: 30px;
-}
-.single-portfolio{
-    height: 250px;
-    background-size: cover;
-    position: relative;
-    background-color: #ddd;
-    background-position: top;
-    overflow: hidden;
-    z-index: 1;
+#paraimg1 {
+	vertical-align: bottom;
 }
 
-.single-portfolio:after{
-    position: absolute;
-    content: '';
-    left:0;
-    height: 0;
-    background-color: #000;
-    transition: .3s;
-    opacity: 0.5;
-    bottom: 0;
-    z-index: -1;
+.div-wrapper {
+	height: 1000px;
+	width: 100%;
+	position: relative;
+}
+#protitle {
+	padding-top: 20px;
+}
+#projects {
+	background-color: white;
+	position: relative;
+	color: black;
+	padding: 30px;
+}
+.single-portfolio {
+	height: 250px;
+	background-size: cover;
+	position: relative;
+	background-color: #ddd;
+	background-position: top;
+	overflow: hidden;
+	z-index: 1;
 }
 
-.single-portfolio:hover .portfolio-hover{
-    transition: 1s;
-    visibility: visible;
-    height: 140%;
-    opacity: 1;
-    
+.single-portfolio:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	height: 0;
+	background-color: #000;
+	transition: 0.3s;
+	opacity: 0.5;
+	bottom: 0;
+	z-index: -1;
 }
 
-.portfolio-hover{
-    position: absolute;
-    width: 100%;
-    bottom: -75px;
-    padding: 15px;
-    z-index: 1;
-}
-.portfolio-hover:hover{
-    position: absolute;
-    width: 100%;
-    padding-top: 310px; 
-    transition: 3s;
-    bottom: 0;
-    backface-visibility: hidden;
-} 
-#prorow{
-    margin-bottom: 30px;
-}
-#namelinks{
-    background-color: #000;
-    color: white;
-    padding: 5px;
-    
-}
-.portfolio-btn{
-    padding-top:5px;
+.single-portfolio:hover .portfolio-hover {
+	transition: 1s;
+	visibility: visible;
+	height: 140%;
+	opacity: 1;
 }
 
-footer{
-    height: 75px;
-    padding: 25px;
+.portfolio-hover {
+	position: absolute;
+	width: 100%;
+	bottom: -75px;
+	padding: 15px;
+	z-index: 1;
 }
-@media screen and (max-width:1200px){
- #rpso, #mgg{
-     font-size: .8em;
- }   
+.portfolio-hover:hover {
+	position: absolute;
+	width: 100%;
+	padding-top: 310px;
+	transition: 3s;
+	bottom: 0;
+	backface-visibility: hidden;
 }
-@media screen and (max-width:990px){
-    .navbar-collapse.collapse.in {
-        display: block!important;
-      }
-    
-    #rpso, #mgg{
-        font-size: .65em;
-    }   
-    
+#prorow {
+	margin-bottom: 30px;
 }
-
-@media screen and (max-width: 768px){
-    
-    .container{
-        margin: 15px;
-    }
-    
-    .navbar-collapse.collapse.in {
-        display: block!important;
-      }
-    .skill ul li{
-        display: inline-flex;
-    }
-    .div-wrapper{
-        height: 500px;
-    }
-    .single-portfolio{
-        margin:15px;
-    }
-    #rpso{
-        font-size: .58em;
-    }
-    #mgg{
-        font-size: .5em;
-    } 
-    footer{
-        height: 50px;
-        padding: 15px;
-    }
-
+#namelinks {
+	background-color: #000;
+	color: white;
+	padding: 5px;
+}
+.portfolio-btn {
+	padding-top: 5px;
 }
 
-@media screen and (max-width: 640px){
-    #rpso, #mgg{
-        font-size: .85em;
-    } 
+footer {
+	height: 75px;
+	padding: 25px;
+}
+@media screen and (max-width: 1200px) {
+	#rpso,
+	#mgg {
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 990px) {
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+
+	#rpso,
+	#mgg {
+		font-size: 0.65em;
+	}
 }
 
-@media screen and (max-width: 430px){
-    .hero-image{
-        background-color: black;
-        background-image: none;
-        }
-        .hero-area{
-            padding-bottom: 5px;
-        }
-        .social-links{
-            padding-top: 5px;
-        }
-        .area-content{
-            padding-top: 50px;
-        }
-        li a{
-            color: white;
-            margin: 3px;
-        }
-        i{
-            margin: 5px;
-        }
-        #aboutimage{
-            padding-left: 0;
-        }
-        #mgg, #rpso{
-            font-size: .49em;
-        }
+@media screen and (max-width: 768px) {
+	.container {
+		margin: 15px;
+	}
+
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.skill ul li {
+		display: inline-flex;
+	}
+	.div-wrapper {
+		height: 500px;
+	}
+	.single-portfolio {
+		margin: 15px;
+	}
+	#rpso {
+		font-size: 0.58em;
+	}
+	#mgg {
+		font-size: 0.5em;
+	}
+	footer {
+		height: 50px;
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#rpso,
+	#mgg {
+		font-size: 0.85em;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.hero-image {
+		background-color: black;
+		background-image: none;
+	}
+	.hero-area {
+		padding-bottom: 5px;
+	}
+	.social-links {
+		padding-top: 5px;
+	}
+	.area-content {
+		padding-top: 50px;
+	}
+	li a {
+		color: white;
+		margin: 3px;
+	}
+	i {
+		margin: 5px;
+	}
+	#aboutimage {
+		padding-left: 0;
+	}
+	#mgg,
+	#rpso {
+		font-size: 0.49em;
+	}
 }
