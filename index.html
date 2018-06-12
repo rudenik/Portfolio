@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
+        <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
     <title>That New Portfolio Smell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
@@ -8,229 +10,240 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lobster|Montserrat|Open+Sans+Condensed:300" rel="stylesheet">
     <script src="https://use.fontawesome.com/a9c0e2e853.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
     <script src="assets/javascript/app.js" defer></script>
     <script src="assets/javascript/typed.js"></script>
     <script src="assets/javascript/basicScroll.min.js"></script>
-    
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container" id="navcontainer">
                 <a class="navbar-brand logo" href="index.html">
                     <h2>SC</h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"></button>
-                <div class="collapse navbar-collapse">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id=navbarNav>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutme">ABORT!</a>
                         </li>
-                        <li class="nav-item active">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#contact">CONTINUE!</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">RETRY!</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">FAIL!</a>
+                            <a class="nav-link" href="#paraone">FAIL!</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-        <div class="hero-area">
-            <div class="hero-image">
-                <!-- <img src='assets/images/justme.png'id="justme" alt="simoncainphoto" > -->
+    <div class="hero-area">
+        <div class="hero-image">
+            
+        </div>
+        <div class="container">
+            <div class="area-content">
+                <h1>Simon Cain</h1>
+                <p>
+                    <span class="typed"></span>
+                    <span class="typed-cursor"></span>
+                </p>
+                <a href="mailto:simon.cain@mail.utoronto.ca?subject=What's up with Simon Cain" class="button">Contact Me</a>
+                <div class="social-links">
+                    <i class='fab fa-linkedin'></i><a href="https://www.linkedin.com/in/simon-cain-9159341a/">LinkedIn</a>
+                    <i class='fab fa-twitter'></i><a href="https://twitter.com/rudenik">Twitter</a>
+                    <i class='fab fa-facebook-f'></i><a href="https://www.facebook.com/">Facebook</a>
+                    <i class='fab fa-instagram'></i><a href="https://www.instagram.com/rudenik/">Instagram</a>
+                    <i class="far fa-envelope"></i><a href="mailto:simon.cain@mail.utoronto.ca?subject=What's up with Simon Cain">Email</a>
+                </div>
             </div>
-            <div class="container">
-                <div class="area-content">
-                    <h1>Simon Cain</h1>
-                    <p>
-                        <span class="typed"></span>
-                        <span class="typed-cursor"></span>
-                    </p>
-                    <a href="#contact" class="button">Contact Me</a>
-                    <div class="social-links">
-                        <i class='fab fa-linkedin'>linkedin</i>
-                        <i class='fab fa-twitter'>twitter</i>
-                        <i class='fab fa-facebook-f'>facebook</i>
-                        <i class='fab fa-instagram'>Insta</i>
+
+
+        </div>
+    </div>
+    <section id="aboutme">
+        <div class='container'>
+            <div class='row'>
+                <div class='col-7'>
+                    <div class='about-content'></div>
+                    <div class='section-title'>
+
+                        <h1 class="text-uppercase">
+                            About Me
+                        </h1>
+                        <p>I am a technology fixer. Much like the hollywood fixer, my name is mentioned with hushed tones in
+                            dark, smoke-filled rooms. Mr. Cain, called upon only for the most dire of situations. Yet, there
+                            is no problem too small ... even if the answer is simply “have you turned it off and on again?”.
+                            While trying to solve the most difficult of problems, I transform into a veritable Sam Spade
+                            or Nick Charles. Looking for creative solutions rubs off like the charm of a well spoken con
+                            man looking for his next grift. Fret not: the results are on the up and up. Not without my weaknesses,
+                            ambition for self improvement is almost zealous. Python, Objective C, Cocoa, Swift, JavaScript
+                            technologies were no match for my pursuit in learning. You have only to present me with your
+                            challenge for me to demonstrate my… approach. I’m a professional: 13 years experience in Information
+                            Technology with extensive knowledge of both hardware and software and specializing in Apple products.
+                            Managing the service operations in a dynamic educational environment over the past decade has
+                            allowed me to see and hear it all. Give me your best problem, and I’ll give you my brightest
+                            solution.
+                            <div class='skill'>
+                                <h3 class="text-uppercase"></h3>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>Swift</li>
+                                    <li>Computer Repair</li>
+                                    <li>Solutions Provider</li>
+                                    <li>Funky Technician</li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
-                
-
+                <div class='col-5'>
+                    <img class="ali" id="aboutimage" src="assets/images/about-bg.jpg">
+                </div>
             </div>
         </div>
-        <section id ="aboutme">
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-7'>
-                        <div class='about-content'></div>
-                            <div class='section-title'>
-                                
-                                <h1 class="text-uppercase">
-                                    About Me
-                                </h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores asperiores eveniet nemo, 
-                                    placeat alias porro quo. Rerum recusandae eius unde quos consectetur! Deleniti porro odio vitae labore,
-                                     tempora esse dolor ratione hic vero delectus, id eius corporis. Tempora veniam sapiente nisi modi? 
-                                     Amet sunt, earum ducimus aspernatur laboriosam ipsa optio fugit cumque obcaecati laborum autem voluptatem 
-                                     modi eaque esse fuga alias eius nobis sit beatae. Ducimus facilis provident sint repellat facere quas nisi. 
-                                     Tempore voluptatem tempora, eligendi quo possimus nostrum magni earum optio doloremque harum inventore in dolorem aliquid culpa et molestias, voluptates dignissimos cum! Eius quia dicta incidunt minus dolor ipsa quasi possimus dolorum iusto, esse impedit perferendis. Commodi dicta velit, sit perferendis eius iusto dolore repellat a, rem sunt accusamus eaque nulla itaque magni sed facere eos exercitationem suscipit aliquid culpa. Temporibus nisi perferendis cum architecto adipisci soluta ex veniam, nobis, quibusdam consequatur tenetur omnis quae quod? Enim voluptates dicta dolor. Nobis ullam quo, recusandae unde ratione, optio quis quibusdam magni enim saepe porro ipsa at illum natus aspernatur culpa quod, voluptates voluptatem sapiente corporis. Laborum, possimus quas perferendis eligendi eos omnis provident accusantium adipisci. Perspiciatis cupiditate rem ipsa itaque iure earum, ut voluptas commodi aut possimus totam corporis vel obcaecati quae, fugit quo hic optio non ipsam adipisci ex? Voluptatem, error quae molestias rerum atque deleniti animi harum inventore architecto ullam necessitatibus earum tenetur ea magni quaerat eligendi. 
-                                    Ullam, magnam voluptatum beatae sunt illum cupiditate dolorum quo voluptatibus suscipit quis officia nihil in ratione aspernatur et ex.</p>
-                                <div class='skill'>
-                                    <h3 class="text-uppercase"></h3>
-                                    <ul>
-                                        <li>JavaScript</li>
-                                        <li>Swift</li>
-                                        <li>Computer Repair</li>
-                                        <li>Solutions Provider</li>
-                                        <li>Funky Technician</li>
-                                    </ul>
+
+    </section>
+    <section id='paraone'>
+        <div class="div-wrapper">
+
+            <img class='scene' id='paraimg4' data-modifier='18' data-start='30' src='assets/images/jbLayer-4.png'>
+
+            <img class='scene' id='paraimg3' data-modifier='12' data-start='200' src='assets/images/jbLayer-3.png'>
+
+
+            <img class='scene' id='paraimg2' data-modifier='8' data-start='325' src='assets/images/jbLayer-2.png'>
+
+           
+            <img class='scene' id='paraimg1' data-modifier='1' data-start='400' src='assets/images/jbLayer-1.png'>
+            
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class='row'>
+                <div class='col-lg-12'>
+                    <h1 id="protitle">Projects</h1>
+                </div>
+            </div>
+            <div class='row' id="prorow">
+                <div class='col-lg-6 col-md-6'>
+                    <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img1.jpg)'>
+                        <div class='portfolio-hover'>
+                            <div class="row" id="namelinks">
+                                <div class='col-8 col-md-9'>
+                                    <h4>
+                                        <span>Bandifier</span>
+                                    </h4>
                                 </div>
+                                <div class="col-4 col-md-3 col-sm-2">
+                                    <div class="portfolio-btn">
+                                        <a href="https://rudenik.github.io/Bandifier/">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="https://github.com/rudenik/Bandifier">
+                                            <i class="fab fa-github-alt"></i>
+                                        </a>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class='col-5'>
-                        <img class="ali" id="aboutimage" src="assets/images/about-bg.jpg">
+                </div>
+
+                <div class='col-lg-6 col-md-6'>
+                    <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img2.jpg)'>
+                        <div class='portfolio-hover'>
+                            <div class="row" id="namelinks">
+                                <div class='col-8 col-md-9'>
+                                    <h4>
+                                        <span id="rpso">Rock Paper Scissor Online</span>
+                                    </h4>
+                                </div>
+                                <div class="col-4 col-md-3 col-sm-2">
+                                    <div class="portfolio-btn">
+                                        <a href="https://rudenik.github.io/RPS-Multiplayer/">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="https://github.com/rudenik/RPS-Multiplayer">
+                                            <i class="fab fa-github-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            </section>
-            <section id='paraone'>
-                <div class="div-wrapper">
-                        
-                <img class='scene' id='paraimg4' data-modifier='18' data-start='30' src='assets/images/jbLayer-4.png'>
-        
-                <img class='scene' id='paraimg3' data-modifier='12' data-start='200' src='assets/images/jbLayer-3.png'>
-            
-                
-                <img class='scene' id='paraimg2' data-modifier='8' data-start='325' src='assets/images/jbLayer-2.png'>
-            
-                <!-- <div class='row'> -->
-                <img class='scene' id='paraimg1' data-modifier='1' data-start='400' src='assets/images/jbLayer-1.png'>
-            <!-- </div> -->
-            </div>
-            </section >
-            <section id="projects">
-                <div class="container">
-                    <div class='row'>
-                        <div class='col-lg-12'>
-                            <h1 id="protitle">Projects</h1>
-                        </div>
-                    </div>
-                    <div class='row' id="prorow">
-                        <div class='col-lg-6 col-md-6'>
-                            <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img1.jpg)'>
-                                <div class='portfolio-hover'>
-                                    <div class="row" id="namelinks">
-                                        <div class='col-10'>
-                                            <h4> 
-                                                <span>Bandifier</span>
-                                            </h4>
-                                        </div>
-                                        <div class="col" >
-                                            <div class="portfolio-btn">
-                                                <a href="https://rudenik.github.io/Bandifier/">
-                                                    <i class="fa fa-link"></i>
-                                                </a>
-                                                <a href="https://github.com/rudenik/Bandifier">
-                                                    <i class="fab fa-github-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class='col-lg-6 col-md-6'>
-                            <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img2.jpg)'>
-                                <div class='portfolio-hover'>
-                                    <div class="row" id="namelinks">
-                                        <div class='col-10'>
-                                            <h4> 
-                                                <span>Rock Paper Scissor Online</span>
-                                            </h4>
-                                        </div>
-                                        <div class="col" >
-                                            <div class="portfolio-btn">
-                                                <a href="https://rudenik.github.io/RPS-Multiplayer/">
-                                                    <i class="fa fa-link"></i>
-                                                </a>
-                                                <a href="https://github.com/rudenik/RPS-Multiplayer">
-                                                    <i class="fab fa-github-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
+            <div class='row' id="prorow">
+                <div class='col-lg-6 col-md-6'>
+                    <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img3.jpg)'>
+                        <div class='portfolio-hover'>
+                            <div class="row" id="namelinks">
+                                <div class='col-8 col-md-9'>
+                                    <h4>
+                                        <span>Giftastic Plus</span>
+                                    </h4>
+                                </div>
+                                <div class="col-4 col-md-3 col-sm-2">
+                                    <div class="portfolio-btn">
+                                        <a href="https://rudenik.github.io/GifTastic/">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="https://github.com/rudenik/GifTastic">
+                                            <i class="fab fa-github-alt"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                        <div class='row' id="prorow">
-                        <div class='col-lg-6 col-md-6'>
-                            <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img3.jpg)'>
-                                <div class='portfolio-hover'>
-                                    <div class="row" id="namelinks">
-                                        <div class='col-10'>
-                                            <h4> 
-                                                <span>Giftastic Plus</span>
-                                            </h4>
-                                        </div>
-                                        <div class="col" >
-                                            <div class="portfolio-btn">
-                                                <a href="https://rudenik.github.io/GifTastic/">
-                                                    <i class="fa fa-link"></i>
-                                                </a>
-                                                <a href="https://github.com/rudenik/GifTastic">
-                                                    <i class="fab fa-github-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class='col-lg-6 col-md-6'>
-                            <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img4.jpg)'>
-                                <div class='portfolio-hover'>
-                                    <div class="row" id="namelinks">
-                                        <div class='col-10'>
-                                            <h4> 
-                                                <span>80's Movie Guessing Game</span>
-                                            </h4>
-                                        </div>
-                                        <div class="col" >
-                                            <div class="portfolio-btn">
-                                                <a href="https://rudenik.github.io/Word-Guess-Game/">
-                                                    <i class="fa fa-link"></i>
-                                                </a>
-                                                <a href="https://github.com/rudenik/Word-Guess-Game">
-                                                    <i class="fab fa-github-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                 </div>
-                        
-                
+
+                <div class='col-lg-6 col-md-6'>
+                    <div class='single-portfolio' style='background-image: url(assets/images/portfolio/img4.jpg)'>
+                        <div class='portfolio-hover'>
+                            <div class="row" id="namelinks">
+                                <div class='col-8 col-md-3 col-md-9'>
+                                    <h4>
+                                        <span id="mgg">80's Movie Guessing Game</span>
+                                    </h4>
+                                </div>
+                                <div class="col-4 col-md-3 col-sm-2">
+                                    <div class="portfolio-btn">
+                                        <a href="https://rudenik.github.io/Word-Guess-Game/">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                        <a href="https://github.com/rudenik/Word-Guess-Game">
+                                            <i class="fab fa-github-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </section>
-    
+
+
+        </div>
+    </section>
+
     <footer class='footer'>
         <div class='container'>
-        <span class='text-muted'>© 2018 SimonCain.</span>
-    </div>
+            <span class='text-muted'>© 2018 SimonCain.</span>
+        </div>
     </footer>
 </body>

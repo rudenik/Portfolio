@@ -3,7 +3,10 @@
     
 }
 .navbar{
-    background-color: black;
+    background-color: black;   
+}
+a{
+    color: rgb(255,255,255,.5);
 }
 body{
     background-color: black;
@@ -14,6 +17,8 @@ body{
 }
 .area-content{
     padding-top: 300px;
+    z-index: 20;
+    position: relative;
 }
 .logo{
     color: white;
@@ -31,7 +36,6 @@ nav{
     padding-bottom:30px;
     position: relative;
 }
-
 .hero-image{
     background-image: url("../images/justme.png");
     background-repeat: no-repeat;
@@ -43,7 +47,6 @@ nav{
     bottom: 40;
     right: 0;
     overflow: auto;
-
 }
 #justme{
     
@@ -106,9 +109,7 @@ nav{
 #paraimg1{
     vertical-align: bottom;
 }
-/* #paraimg2{
-    bottom: 10
-} */
+
 .div-wrapper{
     height: 1000px;
     width: 100%;
@@ -147,7 +148,7 @@ nav{
 }
 
 .single-portfolio:hover .portfolio-hover{
-    transition: 3s;
+    transition: 1s;
     visibility: visible;
     height: 140%;
     opacity: 1;
@@ -161,13 +162,11 @@ nav{
     padding: 15px;
     z-index: 1;
 }
- .portfolio-hover:hover{
+.portfolio-hover:hover{
     position: absolute;
     width: 100%;
     padding-top: 310px; 
     transition: 3s;
-    
-    /* left: 0; */
     bottom: 0;
     backface-visibility: hidden;
 } 
@@ -175,19 +174,97 @@ nav{
     margin-bottom: 30px;
 }
 #namelinks{
-    /* bottom: 0; */
     background-color: #000;
     color: white;
     padding: 5px;
     
 }
-/* 
+.portfolio-btn{
+    padding-top:5px;
+}
 
-font-family: 'Montserrat', sans-serif;
-
-
- */
 footer{
     height: 75px;
-     padding: 25px;
- }
+    padding: 25px;
+}
+@media screen and (max-width:1200px){
+ #rpso, #mgg{
+     font-size: .8em;
+ }   
+}
+@media screen and (max-width:990px){
+    .navbar-collapse.collapse.in {
+        display: block!important;
+      }
+    
+    #rpso, #mgg{
+        font-size: .65em;
+    }   
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    .container{
+        margin: 15px;
+    }
+    
+    .navbar-collapse.collapse.in {
+        display: block!important;
+      }
+    .skill ul li{
+        display: inline-flex;
+    }
+    .div-wrapper{
+        height: 500px;
+    }
+    .single-portfolio{
+        margin:15px;
+    }
+    #rpso{
+        font-size: .58em;
+    }
+    #mgg{
+        font-size: .5em;
+    } 
+    footer{
+        height: 50px;
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    #rpso, #mgg{
+        font-size: .85em;
+    } 
+}
+
+@media screen and (max-width: 430px){
+    .hero-image{
+        background-color: black;
+        background-image: none;
+        }
+        .hero-area{
+            padding-bottom: 5px;
+        }
+        .social-links{
+            padding-top: 5px;
+        }
+        .area-content{
+            padding-top: 50px;
+        }
+        li a{
+            color: white;
+            margin: 3px;
+        }
+        i{
+            margin: 5px;
+        }
+        #aboutimage{
+            padding-left: 0;
+        }
+        #mgg, #rpso{
+            font-size: .49em;
+        }
+}
